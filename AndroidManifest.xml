@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mk.ukim.finki.jmm.tobuylist"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    
+     <permission
+        android:name="com.ukim.finki.jmm.tobuylist.maps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    
+    <!-- The following two permissions are not required to use
+     Google Maps Android API v2, but are recommended. -->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data android:name="com.google.android.gms.version"
+           android:value="@integer/google_play_services_version" />
+        
+        <activity
+            android:name="mk.ukim.finki.jmm.tobuylist.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mk.ukim.finki.jmm.tobuylist.ToBuyListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mk.ukim.finki.jmm.tobuylist.ToBuyListWithFragments"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mk.ukim.finki.jmm.tobuylist.CatalogLoaderActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mk.ukim.finki.jmm.tobuylist.ratings.RatingsOverviewActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mk.ukim.finki.jmm.tobuylist.ratings.RatingsDetailActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mk.ukim.finki.jmm.tobuylist.download.DownloadActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="mk.ukim.finki.jmm.tobuylist.maps.MapsActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".ratings.contentprovider.RatingsContentProvider"
+            android:authorities="mk.ukim.finki.jmm.tobuylist.ratings.contentprovider" 
+            android:exported="false" />
+
+
+        <service android:name="mk.ukim.finki.jmm.tobuylist.download.DownloadService" />
+        
+        <meta-data
+    		android:name="com.google.android.maps.v2.API_KEY"
+    		android:value="AIzaSyDqJwdZ0A8SDsSHm_Cqb0eRp4yzvj9R1dA"/>
+    </application>
+
+</manifest>

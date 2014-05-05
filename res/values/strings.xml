@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">To-Buy List</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="taskText">Enter item</string>
+    <string name="addTask">Add</string>
+    <string name="addItemContentDescription">To buy</string>
+    <string name="addItemHint">To buy</string>
+    <string name="withFragments">Important items</string>
+    <string name="tobuyList">To-Buy List</string>
+    <string name="loadCatalog">Preview catalog</string>
+    <string name="your_image_will_appear_here">Your image will appear here</string>
+    <string name="share">Share</string>
+	<string name="add_to_previous">Add to previous</string>
+	<string name="numberItems">numberItems</string>
+	<string name="viewMap">View Map</string>
+	<string name="getStores">Get stores</string>
+	
+	<string name="items">items</string>
+	<string name="scanwifi">Scan Wifi Network</string>
+    
+   	<string name="no_ratings">Currently there are no ratings maintained</string>
+  	<string name="menu_insert">Add Item</string>
+  	<string name="menu_delete">Delete rating</string>
+  	<string name="rating_summary">Summary</string>
+  	<string name="rating_description">Delete rating</string>
+  	<string name="rating_edit_summary">Store name</string>
+  	<string name="rating_edit_description">Description</string>
+  	<string name="rating_edit_confirm">Confirm</string>
+  	<string name="insert">Rate</string>
+  	<string name="rateStore">Rate store</string>
+  	
+  	<string name="status">Status: </string>
+  	<string name="download">Download latest actions</string>
+  	<string name="not_started">Not started</string>
+  	<string name="downloadCatalog">Latest actions</string>
+</resources>

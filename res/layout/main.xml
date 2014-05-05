@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/tobuyListBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="openToBuyList"
+        android:text="@string/tobuyList" />
+
+    <Button
+        android:id="@+id/loadCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="loadCatalog"
+        android:text="@string/loadCatalog" />
+    
+    <Button
+        android:id="@+id/rateStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="rateStore"
+        android:text="@string/rateStore" />
+    
+    <Button
+        android:id="@+id/downloadCatalog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="downloadCatalog"
+        android:text="@string/downloadCatalog" />
+    
+    <Button
+        android:id="@+id/vieMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="viewMap"
+        android:text="@string/viewMap" />
+    
+    <Button
+        android:id="@+id/scanwifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="scanWifi"
+        android:text="@string/scanwifi" />
+
+
+</LinearLayout>

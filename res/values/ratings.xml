@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="stars">
+        <item>1 star</item>
+        <item>2 stars</item>
+        <item>3 stars</item>
+        <item>4 stars</item>
+        <item>5 stars</item>
+    </string-array>
+</resources>
